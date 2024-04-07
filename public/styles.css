@@ -1,6 +1,6 @@
 /* ESTILOS GENERALES */
 body{
-    background: #d1defa;
+    background: #dce8ff;
     font-family: sans-serif,Arial, Helvetica;
     text-align: center;
     padding: 0;
@@ -94,7 +94,7 @@ body{
 /* ESTILOS PARA EL CONTENIDO PRINCIPAL */
 .content{
     grid-area: content;
-    background: #f6f7f9;
+    background: #9ec1f6;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -104,7 +104,7 @@ body{
 
 .peli-item{
     flex-grow: 1;
-    background: #ffffff;
+    background: #f9f7f7;
     border-radius: 10px;
     box-shadow: 0px 0px 6px #ddd;
     margin: 10px;
@@ -149,7 +149,7 @@ input[type="button"]{
 /* ESTILOS BARRA LATERAL */
 .lateral{
     grid-area: lateral;
-    background: #f6f7f8;
+    background: #9ec1f6;
     border-left: 1px solid #ddd;
     padding: 20px;
     

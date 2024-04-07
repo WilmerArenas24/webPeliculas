@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 
 export const Listado = ({listadoState, setListadoState}) => {
 
@@ -16,6 +16,23 @@ export const Listado = ({listadoState, setListadoState}) => {
     
     //Rellenar con las peliculas
     setListadoState(peliculas);
+
+    return peliculas;
+  }
+
+  //Borrando elicula
+  const borrarPeli = (id)=>{
+    //Conseguro las peliculas almnacenadas
+    let pelis_almacenadas = conseguirPeliculas();
+
+    //Filtrar esas peliculas para que elimine del array la pelicula seleccionada
+    let nuevo_array_pelis = pelis_almacenadas.filter(peli => peli.id !== parseInt(id))
+
+    //Actualizar el listado
+    setListadoState(nuevo_array_pelis);
+
+    //Actualizar el estado del local storage
+    localStorage.setItem('pelis', JSON.stringify(nuevo_array_pelis))
   }
 
   return (
@@ -29,7 +46,7 @@ export const Listado = ({listadoState, setListadoState}) => {
                         <p className="description">{peli.descripcion}</p>
 
                         <button className="edit">Editar</button>
-                        <button className="delete">Borrar</button>
+                        <button className="delete" onClick={()=>{borrarPeli(peli.id)}}>Borrar</button>
                   </article>
                   );
                 })
