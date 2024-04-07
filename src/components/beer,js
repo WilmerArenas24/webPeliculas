@@ -1,0 +1,5 @@
+
+function drinkBeer(nameFriend) {
+
+    alert(nameFriend + 'POLA O MIEDO?');
+}
