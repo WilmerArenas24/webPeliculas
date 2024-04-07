@@ -167,9 +167,9 @@ input[type="button"]{
 
 }
 
-.lateral input[type="text"],
-.lateral input[type="text"],
-.lateral textarea{
+input[type="text"],
+input[type="text"],
+textarea{
     display: block;
     margin: 0 auto;
     margin-top: 15px;
@@ -199,6 +199,9 @@ input[type="button"]{
     color: #0b468a;
     text-decoration: none;
 }
+
+/*Estilo para el ditar*/
+
 
 /* ESTILOS PARA SER RESPONSIVE */
 @media(max-width:1085px){
