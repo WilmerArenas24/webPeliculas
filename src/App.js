@@ -37,7 +37,7 @@ function App() {
       {/* Barra lateral */}
       <aside className="lateral">
         
-        <Buscador/>
+        <Buscador listadoState = {listadoState} setListadoState = {setListadoState}/>
 
       {/* usandoo setListadoState para actualizar las pelis al oprimir el btton de crear */}
         <Crear setListadoState = {setListadoState}/>
