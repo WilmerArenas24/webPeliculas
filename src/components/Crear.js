@@ -32,7 +32,7 @@ export const Crear = () => {
         setPeliState(peli);
 
         //Guardar en el almacenamiento local
-        GuardarEnStorage(peli);
+        GuardarEnStorage("pelis", peli);
         
     }
 
